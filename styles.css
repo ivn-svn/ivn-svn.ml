@@ -115,6 +115,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	text-decoration: none !important;
 }
 
 .skills .li_wrap,
