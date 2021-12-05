@@ -137,6 +137,7 @@ body{
 .skills .li_wrap .text,
 .hobbies .li_wrap .text{
 	margin-top: 5px;
+	text-decoration: none !important;
 }
 
 .hobbies .li_wrap{
