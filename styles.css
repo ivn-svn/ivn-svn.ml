@@ -130,6 +130,7 @@ body{
 }
 
 .skills .li_wrap{
+	text-decoration: none !important;
 	background: #fff;
 }
 
@@ -155,6 +156,26 @@ body{
 .hobbies .li_wrap:hover .text{
 	color: #858585;
 }
+
+/* SKILLS HOVER */
+.skills .li_wrap:hover{
+	background: #858585;
+}
+
+.skills .li_wrap:hover .icon,
+.skills .li_wrap:hover .text{
+	color: #fff !important;
+}
+/* LINK & LINK HOVER */
+a {
+	text-decoration: none !important;
+	color: #858585;
+  }
+a:hover {
+	text-decoration: none !important;
+	color: #fff;
+}
+/* end link & text hover: skills */
 
 .header{
 	background: #292b2f;
