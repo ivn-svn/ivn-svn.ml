@@ -9,20 +9,20 @@
 }
 
 body{
-    background: linear-gradient(to right, #de6262 , #ffb88c)
+    background: linear-gradient(to bottom, #fff8f3 , #fdbc93);
+	padding-top: 6%;
+
 }
 
 .resume{
-	width: 800px;
-	
-
-
+	width: 65%;
 	background: #fff;
 	margin: 25px auto;
 	display: flex;
 	border-radius: 10px;
 	/* font-size: 7px; */
 	opacity: 80.5;
+
 }
 
 .left{
@@ -331,13 +331,13 @@ button.print-button {
 	background-position: center;
 	background-image: linear-gradient(
 	  to top,
-	  #FFE4B5 0, #FFE4B5 14%,
+	  #ebe3d6 0, #c5aa7c 14%,
 	  #858585 28%,
-	  #FFE4B5 28%, #FFE4B5 42%,
+	  #c0b39b 28%, #FFE4B5 42%,
 	  #858585 42%, #858585 56%,
 	  #FFE4B5 56%, #FFE4B5 70%,
 	  #858585 70%, #858585 84%,
-	  #FFE4B5 84%, #FFE4B5 100%
+	  #795f34 84%, #FFE4B5 100%
 	);
   
 	transition: height .3s, border-width 0s .3s, width 0s .3s;
