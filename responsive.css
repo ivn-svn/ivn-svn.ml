@@ -10,7 +10,7 @@
 	ul li {
 		display: inline-block; 
 		padding-left: 15px; 
-		width: 140px; 
+		width: 280px; 
 		background-position: -5px 0px;
 		margin-right: 6px; 
 		line-height: 1.7em;
@@ -18,16 +18,19 @@
 }
 
 @media only screen and (max-width: 480px) {
-	ul li { width: 120px; }
+	ul li { width: 350px; }
 }
 
 @media only screen and (max-width: 320px) {
 	* { margin: 0 10px; }
+		ul li { width: 300px; }
+
 }
 
 /** iPhone only **/
 @media screen and (max-device-width: 480px) {
-	ul li { width: 150px; }
+	ul li { width: 350px; }
+	p { font-size: 0.8em; }
 }
 /* Other effects: */
 .img_holder {
