@@ -1,16 +1,30 @@
-
-
-select {
-    width: 130px;
-    padding: 0 0 0 10px;
-    border: 10px solid white;
+.langSlider {
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-}
-
-.hidden {
-    display: none;
+    font-size: 8px;
   }
   
+  .langItem {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .langItem.active {
+    background-color: #ccc;
+    color: white;
+  }
+  
+  .text.hidden {
+    display: none;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
   

@@ -1,39 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const langSelect = document.querySelector('.langSelect');
-    const enElements = document.querySelectorAll('.en');
-    const deElements = document.querySelectorAll('.de');
-    const bgElements = document.querySelectorAll('.bg');
-    
-    class LanguageSelector {
-      constructor() {
-        this.init();
-      }
-      
-      init() {
-        langSelect.addEventListener('change', () => {
-          const lang = langSelect.value;
+  const langSlider = document.querySelector('.langSlider');
+  const langItems = document.querySelectorAll('.langItem');
+  const enElements = document.querySelectorAll('.en');
+  const deElements = document.querySelectorAll('.de');
+  const bgElements = document.querySelectorAll('.bg');
+
+  class LanguageSelector {
+    constructor() {
+      this.init();
+    }
+
+    init() {
+      langItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const lang = item.dataset.lang;
           this.showLanguage(lang);
         });
-        this.showLanguage('en');
-      }
-    
-      showLanguage(lang) {
-        if (lang === 'en') {
-          enElements.forEach(el => el.classList.remove('hidden'));
-          deElements.forEach(el => el.classList.add('hidden'));
-          bgElements.forEach(el => el.classList.add('hidden'));
-        }
-        else if (lang === 'de') {
-          enElements.forEach(el => el.classList.add('hidden'));
-          deElements.forEach(el => el.classList.remove('hidden'));
-          bgElements.forEach(el => el.classList.add('hidden'));
-        }
-        else if (lang === 'bg') {
-            enElements.forEach(el => el.classList.add('hidden'));
-            deElements.forEach(el => el.classList.add('hidden'));
-            bgElements.forEach(el => el.classList.remove('hidden'));
-          }
+      });
+      this.showLanguage('en');
+    }
+
+    showLanguage(lang) {
+      langItems.forEach(item => item.classList.remove('active'));
+      enElements.forEach(el => el.classList.add('hidden'));
+      deElements.forEach(el => el.classList.add('hidden'));
+      bgElements.forEach(el => el.classList.add('hidden'));
+
+      const activeItem = document.querySelector(`.langItem[data-lang="${lang}"]`);
+      activeItem.classList.add('active');
+
+      if (lang === 'en') {
+        enElements.forEach(el => el.classList.remove('hidden'));
+      } else if (lang === 'de') {
+        deElements.forEach(el => el.classList.remove('hidden'));
+      } else if (lang === 'bg') {
+        bgElements.forEach(el => el.classList.remove('hidden'));
       }
     }
-    
-    new LanguageSelector();  });
+  }
+
+  new LanguageSelector();
+});
