@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -8,13 +8,13 @@
 	font-family: 'Ubuntu', sans-serif;
 }
 
-body{
-    background: linear-gradient(to right, #de6262 , #ffb88c)
+body {
+	background: linear-gradient(to right, #de6262, #ffb88c)
 }
 
-.resume{
+.resume {
 	width: 800px;
-	
+
 
 
 	background: #fff;
@@ -25,8 +25,8 @@ body{
 	opacity: 80.5;
 }
 
-.left{
-    background: rgba(160, 160, 160, 0.733);
+.left {
+	background: rgba(160, 160, 160, 0.733);
 	width: 250px;
 	padding: 0 20px;
 	border-radius: 10px;
@@ -34,26 +34,26 @@ body{
 	border-bottom-right-radius: 0px;
 }
 
-.right{
+.right {
 	width: calc(100% - 250px);
 	border-radius: 10px;
 }
 
-.left .img_holder{
+.left .img_holder {
 	text-align: center;
 	padding: 20px 0;
 }
 
-.left .img_holder img{
+.left .img_holder img {
 	width: 200px;
 	border-radius: 30px;
 }
 
-.pb{
+.pb {
 	padding-bottom: 20px;
 }
 
-.title{
+.title {
 	font-size: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -65,7 +65,7 @@ body{
 	margin-bottom: 15px;
 }
 
-.title:before{
+.title:before {
 	content: "";
 	position: absolute;
 	top: 35px;
@@ -75,25 +75,25 @@ body{
 	background: #b8977c;
 }
 
-.left .icon{
+.left .icon {
 	font-size: 20px;
 	color: #858585;
 }
 
-.left .text{
+.left .text {
 	color: #858585;
 	text-transform: uppercase;
 	font-size: 11px;
 }
 
-.contact .li_wrap{
+.contact .li_wrap {
 	display: flex;
 	align-items: center;
 	width: 100%;
 	margin-bottom: 15px;
 }
 
-.contact .li_wrap .icon{
+.contact .li_wrap .icon {
 	width: 50px;
 	height: 50px;
 	background: #fff;
@@ -104,21 +104,21 @@ body{
 	margin-right: 15px;
 }
 
-.contact .li_wrap .text{
+.contact .li_wrap .text {
 	width: calc(100% - 50px);
 	word-break: break-word;
 	color: #fff;
 }
 
 .skills ul,
-.hobbies ul{
+.hobbies ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .skills .li_wrap,
-.hobbies .li_wrap{
+.hobbies .li_wrap {
 	width: 100px;
 	height: 100px;
 	margin-bottom: 15px;
@@ -129,56 +129,59 @@ body{
 	justify-content: center;
 }
 
-.skills .li_wrap{
+.skills .li_wrap {
 	text-decoration: none !important;
 	background: #fff;
 }
 
 .skills .li_wrap .text,
-.hobbies .li_wrap .text{
+.hobbies .li_wrap .text {
 	margin-top: 5px;
 	text-decoration: none !important;
 }
 
-.hobbies .li_wrap{
+.hobbies .li_wrap {
 	border: 2px solid #fff;
 }
 
 .hobbies .li_wrap .icon,
-.hobbies .li_wrap .text{
+.hobbies .li_wrap .text {
 	color: #fff;
 }
 
-.hobbies .li_wrap:hover{
+.hobbies .li_wrap:hover {
 	background: #fff;
 }
 
 .hobbies .li_wrap:hover .icon,
-.hobbies .li_wrap:hover .text{
+.hobbies .li_wrap:hover .text {
 	color: #858585;
 }
 
 /* SKILLS HOVER */
-.skills .li_wrap:hover{
+.skills .li_wrap:hover {
 	background: #858585;
 }
 
 .skills .li_wrap:hover .icon,
-.skills .li_wrap:hover .text{
+.skills .li_wrap:hover .text {
 	color: #fff !important;
 }
+
 /* LINK & LINK HOVER */
 a {
 	text-decoration: none !important;
 	color: #858585;
-  }
+}
+
 a:hover {
 	text-decoration: none !important;
 	color: #fff;
 }
+
 /* end link & text hover: skills */
 
-.header{
+.header {
 	background: #292b2f;
 	padding: 15px 30px;
 	color: #fff;
@@ -188,67 +191,67 @@ a:hover {
 
 }
 
-.header .name{
+.header .name {
 	font-size: 52px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #858585;
 }
 
-.header .role{
+.header .role {
 	font-weight: 300;
 	font-size: 20px;
 }
 
-.header .about{
+.header .about {
 	margin-top: 20px;
 	line-height: 26px;
 	font-size: 12px;
 }
 
-.right_inner{
+.right_inner {
 	padding: 30px;
 	color: #292b2f;
 }
 
-.right_inner .education{
+.right_inner .education {
 	margin-top: 30px;
 }
 
-.right_inner .li_wrap{
+.right_inner .li_wrap {
 	display: flex;
 	margin-bottom: 15px;
 }
 
 .right_inner .li_wrap .date {
-    width: 125px;
-    color: #858585;
+	width: 125px;
+	color: #858585;
 }
 
-.right_inner .li_wrap .info{
-	width: calc(100%  - 125px);
+.right_inner .li_wrap .info {
+	width: calc(100% - 125px);
 	padding-left: 25px;
 	position: relative;
 }
 
-.right_inner .li_wrap .info_title{
+.right_inner .li_wrap .info_title {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
 	color: #858585;
 }
 
-.right_inner .li_wrap .info_com{
+.right_inner .li_wrap .info_com {
 	font-weight: 300;
 	font-size: 12px !important;
 	margin-top: 3px;
 }
 
-.right_inner .li_wrap .info_cont{
+.right_inner .li_wrap .info_cont {
 	margin-top: 15px;
 }
 
-.right_inner .li_wrap .info:before{
+.right_inner .li_wrap .info:before {
 	content: "";
 	position: absolute;
 	top: 3px;
@@ -259,7 +262,7 @@ a:hover {
 	border-radius: 50%;
 }
 
-.right_inner .li_wrap .info:after{
+.right_inner .li_wrap .info:after {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -273,52 +276,60 @@ a:hover {
 button.print-button {
 	width: 98%;
 	height: 98%;
-  }
-  span.print-icon, span.print-icon::before, span.print-icon::after, button.print-button:hover .print-icon::after {
+}
+
+span.print-icon,
+span.print-icon::before,
+span.print-icon::after,
+button.print-button:hover .print-icon::after {
 	border: solid 2px #fff;
-  }
-  span.print-icon::after {
+}
+
+span.print-icon::after {
 	border-width: 1px;
-  }
-  
-  button.print-button {
+}
+
+button.print-button {
 	position: relative;
 	padding: 0;
 	border: 0;
-	
+
 	border: none;
 	background: transparent;
-  }
-  
-  span.print-icon, span.print-icon::before, span.print-icon::after, button.print-button:hover .print-icon::after {
+}
+
+span.print-icon,
+span.print-icon::before,
+span.print-icon::after,
+button.print-button:hover .print-icon::after {
 	box-sizing: border-box;
 	background-color: #FFE4B5;
-  }
-  
-  span.print-icon {
+}
+
+span.print-icon {
 	position: relative;
-	display: inline-block;  
+	display: inline-block;
 	padding: 0;
 	margin-top: 20%;
-  
+
 	width: 60%;
 	height: 35%;
 	background: #FFE4B5;
 	border-radius: 10% 10% 0 0;
-  }
-  
-  span.print-icon::before {
+}
+
+span.print-icon::before {
 	content: " ";
 	position: absolute;
 	bottom: 100%;
 	left: 12%;
 	right: 12%;
 	height: 110%;
-  
+
 	transition: height .3s .18s;
-  }
-  
-  span.print-icon::after {
+}
+
+span.print-icon::after {
 	content: " ";
 	position: absolute;
 	top: 55%;
@@ -329,30 +340,28 @@ button.print-button {
 	background-repeat: no-repeat;
 	background-size: 70% 90%;
 	background-position: center;
-	background-image: linear-gradient(
-	  to top,
-	  #FFE4B5 0, #FFE4B5 14%,
-	  #858585 28%,
-	  #FFE4B5 28%, #FFE4B5 42%,
-	  #858585 42%, #858585 56%,
-	  #FFE4B5 56%, #FFE4B5 70%,
-	  #858585 70%, #858585 84%,
-	  #FFE4B5 84%, #FFE4B5 100%
-	);
-  
+	background-image: linear-gradient(to top,
+			#FFE4B5 0, #FFE4B5 14%,
+			#858585 28%,
+			#FFE4B5 28%, #FFE4B5 42%,
+			#858585 42%, #858585 56%,
+			#FFE4B5 56%, #FFE4B5 70%,
+			#858585 70%, #858585 84%,
+			#FFE4B5 84%, #FFE4B5 100%);
+
 	transition: height .3s, border-width 0s .3s, width 0s .3s;
-  }
-  
-  button.print-button:hover {
+}
+
+button.print-button:hover {
 	cursor: copy;
-  }
-  
-  button.print-button:hover .print-icon::before {
-	height:0px;
+}
+
+button.print-button:hover .print-icon::before {
+	height: 0px;
 	transition: height .2s;
-  }
-  button.print-button:hover .print-icon::after {
-	height:120%;
+}
+
+button.print-button:hover .print-icon::after {
+	height: 120%;
 	transition: height .2s .15s, border-width 0s .16s;
-  }
-  
+}

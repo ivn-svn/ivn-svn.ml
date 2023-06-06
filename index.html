@@ -5,10 +5,12 @@
 	<meta charset="UTF-8">
 	<title>Svetlin's CV</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="language.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<!-- TEST JS -->
-	<script type="text/javascript" src="charts.js"></script>
+	<script type="text/javascript" src="./charts.js"></script>
+	<script type="text/javascript" src="./language.js"></script>
 	<!-- TEST JS END-->
 
 </head>
@@ -51,8 +53,14 @@
 							<li>
 								<div class="li_wrap">
 									<div class="icon"><a href="https://goo.gl/maps/V5myGhy9E7MxpWqE9" style="color:moccasin"><i class="fas fa-map-signs" aria-hidden="true"></i></a></div>
-									<div class="text">
+									<div class="text en">
 										1618 | Sofia, Bulgaria
+									</div>
+									<div class="text de hidden">
+										1618 | Sofia, Bulgarien
+									</div>
+									<div class="text bg hidden">
+										1618 | София, България
 									</div>
 								</div>
 							</li>
@@ -176,6 +184,15 @@
 			</div>
 			<div class="right">
 				<div class="header">
+						<!-- Language switch -->
+						<div class="languages" style="float: right;">
+							<select class="langSelect">
+								<option value="en" selected>English</option>
+								<option value="de">Deutsch</option>
+								<option value="bg">Български</option>
+							</select>
+						</div>
+						<!-- Language switch -->
 					<div class="name_role">
 						<div class="name">
 							Svetlin I.
