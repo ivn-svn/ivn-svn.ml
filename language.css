@@ -25,6 +25,10 @@
   }
 
   .hidden {
-    visibility: hidden;
+    display: none;
+  }
+
+  .languages {
+    padding-bottom: 25px;
   }
   
