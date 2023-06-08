@@ -31,12 +31,18 @@ body {
 	letter-spacing: .1.2rem;
 	font-weight: lighter !important;
 	background: rgba(160, 160, 160, 0.733);
-	width: 250px;
+	width: 350px;
 	padding: 0 20px;
 	border-radius: 10px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
+
+.li_wrap {
+	display: inline-block;
+	margin-right: 5px !important;
+  }
+  
 
 .right {
 	width: calc(100% - 250px);
@@ -110,16 +116,20 @@ body {
 
 .contact .li_wrap .text {
 	width: calc(100% - 50px);
-	word-break: break-word;
 	color: #fff;
 	letter-spacing: 1px;	font-size: 8px;
 }
 
 .skills ul,
 .hobbies ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.skills ul li,
+.hobbies ul li {
+  margin-right: 15px;
 }
 
 .skills .li_wrap,
@@ -229,8 +239,13 @@ a:hover {
 }
 
 .right_inner .li_wrap .date {
-	width: 125px;
+	width: 150px;
 	color: #858585;
+}
+
+.date {
+	font-size: 10px;
+	display: inline;
 }
 
 .right_inner .li_wrap .info {
@@ -445,3 +460,6 @@ button.print-button:hover .print-icon::after {
 	content: 'Copied!';
   }
   
+  .ping {
+	font-size: 13px !important;
+  }
