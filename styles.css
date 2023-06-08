@@ -9,8 +9,12 @@
 }
 
 body {
-	background: linear-gradient(to right, #de6262, #ffb88c)
-}
+	display:grid;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+  }
 
 .resume {
 	width: 800px;
@@ -18,14 +22,14 @@ body {
 
 
 	background: #fff;
-	margin: 25px auto;
 	display: flex;
 	border-radius: 10px;
 	/* font-size: 7px; */
-	opacity: 80.5;
 }
 
 .left {
+	letter-spacing: .1.2rem;
+	font-weight: lighter !important;
 	background: rgba(160, 160, 160, 0.733);
 	width: 250px;
 	padding: 0 20px;
@@ -40,7 +44,7 @@ body {
 }
 
 .left .img_holder {
-	text-align: center;
+	text-align: center !important;
 	padding: 20px 0;
 }
 
@@ -108,6 +112,7 @@ body {
 	width: calc(100% - 50px);
 	word-break: break-word;
 	color: #fff;
+	letter-spacing: 1px;	font-size: 8px;
 }
 
 .skills ul,
@@ -146,11 +151,11 @@ body {
 
 .hobbies .li_wrap .icon,
 .hobbies .li_wrap .text {
-	color: #fff;
+	color: #f9f9f9;
 }
 
 .hobbies .li_wrap:hover {
-	background: #fff;
+	background: #f9f9f9;
 }
 
 .hobbies .li_wrap:hover .icon,
@@ -165,7 +170,7 @@ body {
 
 .skills .li_wrap:hover .icon,
 .skills .li_wrap:hover .text {
-	color: #fff !important;
+	color: #f9f9f9 !important;
 }
 
 /* LINK & LINK HOVER */
@@ -282,7 +287,7 @@ span.print-icon,
 span.print-icon::before,
 span.print-icon::after,
 button.print-button:hover .print-icon::after {
-	border: solid 2px #fff;
+	border: solid 2px #ddb595;
 }
 
 span.print-icon::after {
@@ -303,7 +308,7 @@ span.print-icon::before,
 span.print-icon::after,
 button.print-button:hover .print-icon::after {
 	box-sizing: border-box;
-	background-color: #FFE4B5;
+	background-color: #f9f9f9;
 }
 
 span.print-icon {
@@ -314,7 +319,7 @@ span.print-icon {
 
 	width: 60%;
 	height: 35%;
-	background: #FFE4B5;
+	background:  linear-gradient(45deg, #c6a386 45%, #c6a386 36%, #ddb595 100%);
 	border-radius: 10% 10% 0 0;
 }
 
@@ -336,18 +341,18 @@ span.print-icon::after {
 	left: 12%;
 	right: 12%;
 	height: 0%;
-	background: #FFE4B5;
+	background: #ddb595;
 	background-repeat: no-repeat;
 	background-size: 70% 90%;
 	background-position: center;
 	background-image: linear-gradient(to top,
-			#FFE4B5 0, #FFE4B5 14%,
+			#ddb595 0, rgb(134, 116, 85) 14%,
 			#858585 28%,
-			#FFE4B5 28%, #FFE4B5 42%,
+			#ddb595 28%, #ddb595 42%,
 			#858585 42%, #858585 56%,
-			#FFE4B5 56%, #FFE4B5 70%,
+			#ddb595 56%, #ddb595 70%,
 			#858585 70%, #858585 84%,
-			#FFE4B5 84%, #FFE4B5 100%);
+			#ddb595 84%, #ddb595 100%);
 
 	transition: height .3s, border-width 0s .3s, width 0s .3s;
 }
@@ -365,3 +370,78 @@ button.print-button:hover .print-icon::after {
 	height: 120%;
 	transition: height .2s .15s, border-width 0s .16s;
 }
+
+/* css gradient borders */
+
+
+  
+  .container {
+	border-radius: 10px;
+	max-width: auto;
+	padding: 2px;
+	position: relative;
+	z-index:1;
+	background-color: #4158D0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%); 
+	margin-right:25px;
+	filter: brightness(120%);
+}
+
+.container:before {
+	  border-radius: 10px;
+	z-index:-1;
+	position: absolute;
+	content:"";
+	width:100%;
+	height: 100%;
+	left:10px;
+	top:0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%); 
+	filter: blur(20px);
+	
+  }
+  
+  .gradient {
+	color: black; 
+  }
+
+  .wrapper {
+	padding: 50px;
+  }
+
+  /* Copy paste icon */
+
+  .copy-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	color: #fff;
+	cursor: pointer;
+  }
+
+  .copy-icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	position: relative;
+	cursor: pointer;
+  }
+  
+  .copy-icon:hover:after {
+	content: 'Copy';
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #b8977c;
+	color: #fff;
+	font-size: 10px;
+	padding: 2px 6px;
+	border-radius: 3px;
+	white-space: nowrap;
+  }
+  
+  .copy-icon.clicked:after {
+	content: 'Copied!';
+  }
+  

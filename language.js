@@ -41,3 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new LanguageSelector();
 });
+
+function copyToClipboard(text) {
+  var tempInput = document.createElement("input");
+  tempInput.value = text;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+
+  var copyIcon = document.querySelector('.copy-icon');
+  copyIcon.classList.add('clicked');
+  setTimeout(function() {
+    copyIcon.classList.remove('clicked');
+  }, 1500);
+}
