@@ -64,7 +64,7 @@ body {
 }
 
 .title {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -106,7 +106,7 @@ body {
 .contact .li_wrap .icon {
 	width: 50px;
 	height: 50px;
-	background: #fff;
+	background: #ebe9e9;
 	border-radius: 15px;
 	display: flex;
 	align-items: center;
@@ -156,12 +156,12 @@ body {
 }
 
 .hobbies .li_wrap {
-	border: 2px solid #fff;
+	border: 2px solid #a1a1a1;
 }
 
 .hobbies .li_wrap .icon,
 .hobbies .li_wrap .text {
-	color: #f9f9f9;
+	color: #777777;
 }
 
 .hobbies .li_wrap:hover {
@@ -372,6 +372,17 @@ span.print-icon::after {
 	transition: height .3s, border-width 0s .3s, width 0s .3s;
 }
 
+
+.icon {
+	opacity:100%;
+	transition:opacity 2s
+  }
+  
+ .icon:hover {
+	opacity: 30%;
+  }
+
+
 button.print-button:hover {
 	cursor: copy;
 }
@@ -430,7 +441,7 @@ button.print-button:hover .print-icon::after {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 5px;
-	color: #fff;
+	color: #e4dede;
 	cursor: pointer;
   }
 
