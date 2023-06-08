@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Svetlin's CV</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="language.css">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="./language.css">
+	<link rel="stylesheet" href="./experiences.css">
+	<script type="text/javascript" src="./experiences.js"></script>
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<!-- TEST JS -->
-	<script type="text/javascript" src="./charts.js"></script>
 	<script type="text/javascript" src="./language.js"></script>
-	<!-- TEST JS END-->
-
 </head>
-
 <body>
 	<div class="wrapper">
 		<div class="container">
-			
-			
 			<div class="gradient">
 		<div class="resume">
 			<div class="left">
 				<div class="img_holder">
-					<img src="sims.png" alt="picture" id="avatar">
+					<img src="./sims.png" alt="picture" id="avatar">
 				</div>
 				<div class="contact_wrap pb">
 					<div class="title">
@@ -270,195 +263,206 @@
 				</div>
 				<div class="right_inner">
 					<div class="exp">
-						<div class="title en">
-							IT EXPERIENCE
+						<div class="switch-title">
+						  <div class="en"><div class="title experience-title switch-button selected" data-target="experience-panel">IT EXPERIENCE</div></div>
+						  <div class="de hidden"><div class="title experience-title switch-button selected" data-target="experience-panel">IT ERFAHRUNG</div></div>
+						  <div class="bg hidden"><div class="title experience-title switch-button selected" data-target="experience-panel">IT ОПИТ</div></div>
+						  <div class="title and"> &nbsp & &nbsp </div>
+						  <div class="en"><div class="title education-title switch-button" data-target="education-panel">EDUCATION</div></div>
+						  <div class="de hidden"><div class="title education-title switch-button" data-target="education-panel">Ausbildung</div></div>
+						  <div class="bg hidden"><div class="title education-title switch-button" data-target="education-panel">Образование</div></div>
 						</div>
-						<div class="title de hidden">
-							IT Erfahrung
+					  
+						<div id="experience-panel" class="panel">
+					
+							<div class="exp_wrap">
+								<ul>
+									<li>
+										<div class="li_wrap">
+											<div class="date en">
+												April 2022 - Present
+											</div>
+											<div class="date de hidden">
+												April 2022 - bis jetzt
+											</div>
+											<div class="date bg hidden">
+												Април 2022 - до момента
+											</div>
+											<div class="info">
+												<p class="info_title en">
+													Product Manager & Software Developer
+												</p>
+												<p class="info_title de hidden">
+													Produktmanager & Software Developer
+												</p>
+												<p class="info_title bg hidden">
+													Продуктов мениджър и софтуерен разработчик
+												</p>
+												<p class="info_com">
+													VERO DIGITAL SOLUTIONS
+												</p>
+												<p class="info_cont en">
+													<br>
+													Software Developer, QA & Product Management responsible for the creation of Dynamic Contract Papers (API printouts), and their API Integration as well as the Quality Assurance of the implemented system changes and responsible for the product delivered. 
+													<br>
+													<br>
+												</p>
+												<p class="info_cont de hidden">
+													<br>
+													Softwareentwickler, QA & Produktmanagement verantwortlich für die Erstellung von dynamischen Vertragsdokumenten (API-Ausdrucken) und deren API-Integration sowie die Qualitätssicherung der implementierten Systemänderungen und verantwortlich für das gelieferte Produkt.
+													<br>
+							
+													<br>
+												</p>
+												<p class="info_cont bg hidden">
+													<br>
+													<br>
+													Софтуерен разработчик, QA и управление на продукт, отговорен за създаването на Динамични договорни документи (отпечатъци от API) и тяхната интеграция чрез API, както и за осигуряването на качеството на внедрените промени в системата и отговорен за доставения продукт.
+													<br>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="li_wrap">
+											<div class="date en">
+												June 2021 - Present
+											</div>
+											<div class="date de hidden">
+												Juni 2021 - bis jetzt
+											</div>
+											<div class="date bg hidden">
+												юни 2021 - до момента
+											</div>
+											<div class="info">
+												<p class="info_title en">
+													Technical Analyst
+												</p>
+												<p class="info_title de hidden">
+													Technischer Analyst
+												</p>
+												<p class="info_title bg hidden">
+													Технически анализатор
+												</p>
+												<p class="info_com">
+													GemSeek
+												</p>
+												<p class="info_cont en">
+													6 corporate clients:
+													<br>
+													Conceptualization/ Description/ Mock-uping of CX Journeys (Frontend of large scale Customer Experience surveys)
+													<br>
+													<br>
+													Build of Specifications based on Requirements found during the Discovery Phase Configuration Build & Implementation XML, JavaScript (transformations), data parsing, e.g. building profanity filter, Customer Satisfaction calculations using JS, etc. Localization and translation for countries from the European Union. Creation & Execution of Testing Plan & Testing Cases Build & Test of dummy data, mapping the logic of the Implementation. Managing Access Control Lists of an ad-hoc, purpose-built client cloud platform. Maintenance of the questions & answers database of the clients. E.g. Creating new answer entries and engineering the structure of the survey based on previous ones (taking decisions on utilizing old infrastructure or creating new one) Sync of survey answer DB entries, across active surveys, survey infrastructure incident management, etc.
+												</p>
+												<p class="info_cont de hidden">
+													6 Firmenkunden:
+													<br>
+													Konzeption/ Beschreibung/ Mock-up von CXJourneys (Frontend großer Customer-Experience-Umfragen)
+													<br>
+													<br>
+													Erstellung von Spezifikationen auf der Grundlage der Anforderungen, die während der Discovery-Phase gefunden wurden. Konfigurationsaufbau und Implementierung von XML, JavaScript (Transformationen), Datenparsen usw., z. B. Erstellung eines Unflätigkeitsfilters, Berechnung der Kundenzufriedenheit mit JS usw. Lokalisierung und Übersetzung für Länder der Europäischen Union. Erstellung und Durchführung eines Testplans und von Testfällen. Erstellung und Test von Dummy-Daten, Abbildung der Logik der Implementierung. Verwaltung von Zugriffssteuerungslisten für eine ad-hoc entwickelte Kunden-Cloud-Plattform. Pflege der Fragen- und Antworten-Datenbank der Kunden. z. B. Erstellung neuer Antworteinträge und Anpassung der Struktur der Umfrage auf Basis früherer Umfragen (Entscheidungen zur Nutzung der alten Infrastruktur oder zur Erstellung einer neuen) Synchronisierung von Umfrageantwort-DB-Einträgen zwischen aktiven Umfragen, Verwaltung von Umfrageinfrastrukturvorfällen usw.
+												</p>
+												<p class="info_cont bg hidden">
+													6 фирмени клиента:
+													<br>
+													Концептуализация/ Описание/ Макетиране на CXJourneys (фронтенд на големи клиентски изследвания за преживяване)
+													<br>
+													<br>
+													Създаване на спецификации на базата на изисквания, открити по време на фазата на откриване. Изграждане и имплементация на конфигурация XML, JavaScript (трансформации), обработка на данни и т.н., например изграждане на филтър за неприличия, изчисляване на задоволството на клиентите с помощта на JS и др. Локализация и превод за държави от Европейския съюз. Създаване и изпълнение на план за тестване и тестови случаи. Създаване и тестване на данни-шаблони, съответстващи на логиката на имплементацията. Управление на списъци с контрол върху достъпа на една клиентска облачна платформа, създадена ад хок, специално за този клиент. Поддръжка на базата данни с въпроси и отговори на клиентите. Например създаване на нови записи с отговори и проектиране на структурата на изследването въз основа на предишни такива (взимане на решения за използване на стара инфраструктура или създаване на нова) Синхронизиране на записи в базата данни с отговори от изследвания, провеждани по настоящия момент, управление на инциденти в инфраструктурата на изследванията и др.
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="li_wrap">
+											<div class="date en">
+												January 2021 - June 2021
+											</div>
+											<div class="date de hidden">
+												Januar 2021 - Juni 2021
+											</div>
+											<div class="date bg hidden">
+												януари 2021 - юни 2021
+											</div>
+											<div class="info">
+												<p class="info_title en">
+													Technical Analyst in the 3rd Level Development Support
+												</p>
+												<p class="info_title de hidden">
+													Technischer Analyst im 3rd-Level-Entwicklungssupport
+												</p>
+												<p class="info_title bg hidden">
+													Технически анализатор в поддръжка на развитието на трето ниво
+												</p>
+												<p class="info_com">
+													Regiocom
+												</p>
+												<!--TEST JS -->
+												<div id="donut_single"></div>
+												<!-- TEST JS END-->
+												<p class="info_cont en">
+													Log monitoring and analysis of server application errors using Grafana, Logstash Kibana, Java EE, Enterprise APIs, SoapUI, Postman, JSON and XML, GitLab, Git, Github, Git Extensions. Documenting the workflow and escalating tickets on Jira.
+												</p>
+												<p class="info_cont de hidden">
+													Log-Überwachung und Analyse von Fehlern in Serveranwendungen mit Hilfe von Grafana, Logstash Kibana, Java EE, Enterprise APIs, SoapUI, Postman, JSON und XML, GitLab, Git, Github, Git Extensions. Dokumentation des Arbeitsablaufs und Eskalation von Tickets in Jira.
+												</p>
+												<p class="info_cont bg hidden">
+													Мониторинг и анализ на грешки в сървърни приложения с използването на Grafana, Logstash Kibana, Java EE, Enterprise APIs, SoapUI, Postman, JSON и XML, GitLab, Git, Github, Git Extensions. Документиране на работния процес и изкарване на тикети в Jira.
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="li_wrap">
+											<div class="date en">
+												October 2020 - February 2021
+											</div>
+											<div class="date de hidden">
+												Oktober 2020 - Februar 2021
+											</div>
+											<div class="date bg hidden">
+												октомври 2020 - февруари 2021
+											</div>
+											<div class="info">
+												<p class="info_title en">
+													Software Application Packaging Coordinator
+												</p>
+												<p class="info_title de hidden">
+													Koordinator in Softwarepaketierung (SysAdmin Koordinator) 
+												</p>
+												<p class="info_title bg hidden">
+													Координатор на пакетирането на софтуерни приложения
+												</p>
+												<p class="info_com">
+													Commerzbank
+												</p>
+												<p class="info_cont en">
+													Coordinating the software packaging process of bank applications Windows Server 2016, Windows System Administration, and several technologies for mass software deployment and keeping track of the software lifecycle in Jira.
+												</p>
+												<p class="info_cont de hidden">
+													Koordinierung des Softwareverpackungsprozesses von Bankanwendungen Windows Server 2016, Windows Systemadministration und mehrerer Technologien für die massenhafte Softwarebereitstellung und Verfolgung des Softwarelebenszyklus in Jira.
+												</p>
+												<p class="info_cont bg hidden">
+													Координиране на процеса по опаковане на софтуерни приложения на банката Windows Server 2016, администриране на Windows System и няколко технологии за масово разпространение на софтуер и проследяване на жизнения цикъл на софтуера в Jira.
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="title bg hidden">
-							IT Опит
+					  
+						<div id="education-panel" class="panel">
+						  <!-- Content for EDUCATION panel -->
+						  <ul>
+							<li>University 1</li>
+							<li>University 2</li>
+							<!-- Add more items here -->
+						  </ul>
 						</div>
-				
-						<div class="exp_wrap">
-							<ul>
-								<li>
-									<div class="li_wrap">
-										<div class="date en">
-											April 2022 - Present
-										</div>
-										<div class="date de hidden">
-											April 2022 - bis jetzt
-										</div>
-										<div class="date bg hidden">
-											Април 2022 - до момента
-										</div>
-										<div class="info">
-											<p class="info_title en">
-												Product Manager & Software Developer
-											</p>
-											<p class="info_title de hidden">
-												Produktmanager & Software Developer
-											</p>
-											<p class="info_title bg hidden">
-												Продуктов мениджър и софтуерен разработчик
-											</p>
-											<p class="info_com">
-												VERO DIGITAL SOLUTIONS
-											</p>
-											<p class="info_cont en">
-												<br>
-												Software Developer, QA & Product Management responsible for the creation of Dynamic Contract Papers (API printouts), and their API Integration as well as the Quality Assurance of the implemented system changes and responsible for the product delivered. 
-												<br>
-												<br>
-											</p>
-											<p class="info_cont de hidden">
-												<br>
-												Softwareentwickler, QA & Produktmanagement verantwortlich für die Erstellung von dynamischen Vertragsdokumenten (API-Ausdrucken) und deren API-Integration sowie die Qualitätssicherung der implementierten Systemänderungen und verantwortlich für das gelieferte Produkt.
-												<br>
-
-												<br>
-											</p>
-											<p class="info_cont bg hidden">
-												<br>
-												<br>
-												Софтуерен разработчик, QA и управление на продукт, отговорен за създаването на Динамични договорни документи (отпечатъци от API) и тяхната интеграция чрез API, както и за осигуряването на качеството на внедрените промени в системата и отговорен за доставения продукт.
-												<br>
-											</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="li_wrap">
-										<div class="date en">
-											June 2021 - Present
-										</div>
-										<div class="date de hidden">
-											Juni 2021 - bis jetzt
-										</div>
-										<div class="date bg hidden">
-											юни 2021 - до момента
-										</div>
-										<div class="info">
-											<p class="info_title en">
-												Technical Analyst
-											</p>
-											<p class="info_title de hidden">
-												Technischer Analyst
-											</p>
-											<p class="info_title bg hidden">
-												Технически анализатор
-											</p>
-											<p class="info_com">
-												GemSeek
-											</p>
-											<p class="info_cont en">
-												6 corporate clients:
-												<br>
-												Conceptualization/ Description/ Mock-uping of CX Journeys (Frontend of large scale Customer Experience surveys)
-												<br>
-												<br>
-												Build of Specifications based on Requirements found during the Discovery Phase Configuration Build & Implementation XML, JavaScript (transformations), data parsing, e.g. building profanity filter, Customer Satisfaction calculations using JS, etc. Localization and translation for countries from the European Union. Creation & Execution of Testing Plan & Testing Cases Build & Test of dummy data, mapping the logic of the Implementation. Managing Access Control Lists of an ad-hoc, purpose-built client cloud platform. Maintenance of the questions & answers database of the clients. E.g. Creating new answer entries and engineering the structure of the survey based on previous ones (taking decisions on utilizing old infrastructure or creating new one) Sync of survey answer DB entries, across active surveys, survey infrastructure incident management, etc.
-											</p>
-											<p class="info_cont de hidden">
-												6 Firmenkunden:
-												<br>
-												Konzeption/ Beschreibung/ Mock-up von CXJourneys (Frontend großer Customer-Experience-Umfragen)
-												<br>
-												<br>
-												Erstellung von Spezifikationen auf der Grundlage der Anforderungen, die während der Discovery-Phase gefunden wurden. Konfigurationsaufbau und Implementierung von XML, JavaScript (Transformationen), Datenparsen usw., z. B. Erstellung eines Unflätigkeitsfilters, Berechnung der Kundenzufriedenheit mit JS usw. Lokalisierung und Übersetzung für Länder der Europäischen Union. Erstellung und Durchführung eines Testplans und von Testfällen. Erstellung und Test von Dummy-Daten, Abbildung der Logik der Implementierung. Verwaltung von Zugriffssteuerungslisten für eine ad-hoc entwickelte Kunden-Cloud-Plattform. Pflege der Fragen- und Antworten-Datenbank der Kunden. z. B. Erstellung neuer Antworteinträge und Anpassung der Struktur der Umfrage auf Basis früherer Umfragen (Entscheidungen zur Nutzung der alten Infrastruktur oder zur Erstellung einer neuen) Synchronisierung von Umfrageantwort-DB-Einträgen zwischen aktiven Umfragen, Verwaltung von Umfrageinfrastrukturvorfällen usw.
-											</p>
-											<p class="info_cont bg hidden">
-												6 фирмени клиента:
-												<br>
-												Концептуализация/ Описание/ Макетиране на CXJourneys (фронтенд на големи клиентски изследвания за преживяване)
-												<br>
-												<br>
-												Създаване на спецификации на базата на изисквания, открити по време на фазата на откриване. Изграждане и имплементация на конфигурация XML, JavaScript (трансформации), обработка на данни и т.н., например изграждане на филтър за неприличия, изчисляване на задоволството на клиентите с помощта на JS и др. Локализация и превод за държави от Европейския съюз. Създаване и изпълнение на план за тестване и тестови случаи. Създаване и тестване на данни-шаблони, съответстващи на логиката на имплементацията. Управление на списъци с контрол върху достъпа на една клиентска облачна платформа, създадена ад хок, специално за този клиент. Поддръжка на базата данни с въпроси и отговори на клиентите. Например създаване на нови записи с отговори и проектиране на структурата на изследването въз основа на предишни такива (взимане на решения за използване на стара инфраструктура или създаване на нова) Синхронизиране на записи в базата данни с отговори от изследвания, провеждани по настоящия момент, управление на инциденти в инфраструктурата на изследванията и др.
-											</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="li_wrap">
-										<div class="date en">
-											January 2021 - June 2021
-										</div>
-										<div class="date de hidden">
-											Januar 2021 - Juni 2021
-										</div>
-										<div class="date bg hidden">
-											януари 2021 - юни 2021
-										</div>
-										<div class="info">
-											<p class="info_title en">
-												Technical Analyst in the 3rd Level Development Support
-											</p>
-											<p class="info_title de hidden">
-												Technischer Analyst im 3rd-Level-Entwicklungssupport
-											</p>
-											<p class="info_title bg hidden">
-												Технически анализатор в поддръжка на развитието на трето ниво
-											</p>
-											<p class="info_com">
-												Regiocom
-											</p>
-											<!--TEST JS -->
-											<div id="donut_single"></div>
-											<!-- TEST JS END-->
-											<p class="info_cont en">
-												Log monitoring and analysis of server application errors using Grafana, Logstash Kibana, Java EE, Enterprise APIs, SoapUI, Postman, JSON and XML, GitLab, Git, Github, Git Extensions. Documenting the workflow and escalating tickets on Jira.
-											</p>
-											<p class="info_cont de hidden">
-												Log-Überwachung und Analyse von Fehlern in Serveranwendungen mit Hilfe von Grafana, Logstash Kibana, Java EE, Enterprise APIs, SoapUI, Postman, JSON und XML, GitLab, Git, Github, Git Extensions. Dokumentation des Arbeitsablaufs und Eskalation von Tickets in Jira.
-											</p>
-											<p class="info_cont bg hidden">
-												Мониторинг и анализ на грешки в сървърни приложения с използването на Grafana, Logstash Kibana, Java EE, Enterprise APIs, SoapUI, Postman, JSON и XML, GitLab, Git, Github, Git Extensions. Документиране на работния процес и изкарване на тикети в Jira.
-											</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="li_wrap">
-										<div class="date en">
-											October 2020 - February 2021
-										</div>
-										<div class="date de hidden">
-											Oktober 2020 - Februar 2021
-										</div>
-										<div class="date bg hidden">
-											октомври 2020 - февруари 2021
-										</div>
-										<div class="info">
-											<p class="info_title en">
-												Software Application Packaging Coordinator
-											</p>
-											<p class="info_title de hidden">
-												Koordinator in Softwarepaketierung (SysAdmin Koordinator) 
-											</p>
-											<p class="info_title bg hidden">
-												Координатор на пакетирането на софтуерни приложения
-											</p>
-											<p class="info_com">
-												Commerzbank
-											</p>
-											<p class="info_cont en">
-												Coordinating the software packaging process of bank applications Windows Server 2016, Windows System Administration, and several technologies for mass software deployment and keeping track of the software lifecycle in Jira.
-											</p>
-											<p class="info_cont de hidden">
-												Koordinierung des Softwareverpackungsprozesses von Bankanwendungen Windows Server 2016, Windows Systemadministration und mehrerer Technologien für die massenhafte Softwarebereitstellung und Verfolgung des Softwarelebenszyklus in Jira.
-											</p>
-											<p class="info_cont bg hidden">
-												Координиране на процеса по опаковане на софтуерни приложения на банката Windows Server 2016, администриране на Windows System и няколко технологии за масово разпространение на софтуер и проследяване на жизнения цикъл на софтуера в Jira.
-											</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						
-					</div>
-				</div>
+					  </div>
+					  
 			</div>
 		</div>
 	</div>
