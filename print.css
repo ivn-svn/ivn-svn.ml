@@ -3,7 +3,7 @@
       color: black !important;
     }
 
-    #education-panel, .education_wrap, .education {
+    #education-panel, #experience-panel, .education_wrap, .education {
         display: block !important;
         visibility: visible !important;
     }

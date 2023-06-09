@@ -18,9 +18,6 @@ body {
 
 .resume {
 	width: 800px;
-
-
-
 	background: #fff;
 	display: flex;
 	border-radius: 10px;
@@ -226,7 +223,7 @@ a:hover {
 }
 
 .right_inner {
-	padding: 30px;
+	padding: 10px;
 	color: #292b2f;
 }
 
@@ -314,7 +311,6 @@ button.print-button {
 	position: relative;
 	padding: 0;
 	border: 0;
-
 	border: none;
 	background: transparent;
 }
@@ -332,7 +328,6 @@ span.print-icon {
 	display: inline-block;
 	padding: 0;
 	margin-top: 20%;
-
 	width: 60%;
 	height: 35%;
 	background: linear-gradient(45deg, #c6a386 45%, #c6a386 36%, #ddb595 100%);
@@ -399,7 +394,6 @@ button.print-button:hover .print-icon::after {
 }
 
 /* css gradient borders */
-
 .container {
 	border-radius: 10px;
 	max-width: auto;
@@ -410,9 +404,36 @@ button.print-button:hover .print-icon::after {
 	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%);
 	margin-right: 25px;
 	filter: brightness(120%);
-}
+	overflow: hidden; /* Ensures the animation stays within the container */
+	box-shadow: 0 0 5px rgba(65, 88, 208, 0.3), 0 0 5px rgba(200, 80, 192, 0.3), 0 0 5px rgba(221, 181, 149, 0.3);
+  }
+  
+  .container:before {
+	border-radius: 10px;
+	z-index: -1;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%);
+	filter: blur(20px);
+	animation: flowing-edges 4s infinite linear;
+	transform: translateX(-100%);
+	box-shadow: 0 0 5px rgba(65, 88, 208, 0.3), 0 0 5px rgba(200, 80, 192, 0.3), 0 0 5px rgba(221, 181, 149, 0.3);
+  }
+  
+  @keyframes flowing-edges {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(100%);
+	}
+  }
 
-.container:before {
+  .boxshadow {
 	border-radius: 10px;
 	z-index: -1;
 	position: absolute;
@@ -423,8 +444,7 @@ button.print-button:hover .print-icon::after {
 	top: 0;
 	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%);
 	filter: blur(20px);
-
-}
+  }
 
 .gradient {
 	color: black;
