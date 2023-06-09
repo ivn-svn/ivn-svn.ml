@@ -1,0 +1,10 @@
+@media print {
+    .left, .text, .contact {
+      color: black !important;
+    }
+
+    #education-panel, .education_wrap, .education {
+        display: block !important;
+        visibility: visible !important;
+    }
+  }
