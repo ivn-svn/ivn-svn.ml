@@ -9,12 +9,12 @@
 }
 
 body {
-	display:grid;
+	display: grid;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
 	background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
-  }
+}
 
 .resume {
 	width: 800px;
@@ -41,8 +41,8 @@ body {
 .li_wrap {
 	display: inline-block;
 	margin-right: 5px !important;
-  }
-  
+}
+
 
 .right {
 	width: calc(100% - 250px);
@@ -117,19 +117,20 @@ body {
 .contact .li_wrap .text {
 	width: calc(100% - 50px);
 	color: #fff;
-	letter-spacing: 1px;	font-size: 8px;
+	letter-spacing: 1px;
+	font-size: 8px;
 }
 
 .skills ul,
 .hobbies ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .skills ul li,
 .hobbies ul li {
-  margin-right: 15px;
+	margin-right: 15px;
 }
 
 .skills .li_wrap,
@@ -239,7 +240,7 @@ a:hover {
 }
 
 .right_inner .li_wrap .date {
-	width: 150px;
+	width: 125px;
 	color: #858585;
 }
 
@@ -334,7 +335,7 @@ span.print-icon {
 
 	width: 60%;
 	height: 35%;
-	background:  linear-gradient(45deg, #c6a386 45%, #c6a386 36%, #ddb595 100%);
+	background: linear-gradient(45deg, #c6a386 45%, #c6a386 36%, #ddb595 100%);
 	border-radius: 10% 10% 0 0;
 }
 
@@ -374,13 +375,13 @@ span.print-icon::after {
 
 
 .icon {
-	opacity:100%;
-	transition:opacity 2s
-  }
-  
- .icon:hover {
+	opacity: 100%;
+	transition: opacity 2s
+}
+
+.icon:hover {
 	opacity: 30%;
-  }
+}
 
 
 button.print-button:hover {
@@ -399,61 +400,59 @@ button.print-button:hover .print-icon::after {
 
 /* css gradient borders */
 
-
-  
-  .container {
+.container {
 	border-radius: 10px;
 	max-width: auto;
 	padding: 2px;
 	position: relative;
-	z-index:1;
+	z-index: 1;
 	background-color: #4158D0;
-	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%); 
-	margin-right:25px;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%);
+	margin-right: 25px;
 	filter: brightness(120%);
 }
 
 .container:before {
-	  border-radius: 10px;
-	z-index:-1;
+	border-radius: 10px;
+	z-index: -1;
 	position: absolute;
-	content:"";
-	width:100%;
+	content: "";
+	width: 100%;
 	height: 100%;
-	left:10px;
-	top:0;
-	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%); 
+	left: 10px;
+	top: 0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%);
 	filter: blur(20px);
-	
-  }
-  
-  .gradient {
-	color: black; 
-  }
 
-  .wrapper {
+}
+
+.gradient {
+	color: black;
+}
+
+.wrapper {
 	padding: 50px;
-  }
+}
 
-  /* Copy paste icon */
+/* Copy paste icon */
 
-  .copy-icon {
+.copy-icon {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 5px;
 	color: #e4dede;
 	cursor: pointer;
-  }
+}
 
-  .copy-icon {
+.copy-icon {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 5px;
 	position: relative;
 	cursor: pointer;
-  }
-  
-  .copy-icon:hover:after {
+}
+
+.copy-icon:hover:after {
 	content: 'Copy';
 	position: absolute;
 	top: -20px;
@@ -465,12 +464,67 @@ button.print-button:hover .print-icon::after {
 	padding: 2px 6px;
 	border-radius: 3px;
 	white-space: nowrap;
-  }
-  
-  .copy-icon.clicked:after {
+}
+
+.copy-icon.clicked:after {
 	content: 'Copied!';
-  }
-  
-  .ping {
+}
+
+.ping {
 	font-size: 13px !important;
-  }
+}
+
+/* TOOLTIP */
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	font-size: 11px;
+	color: #fff;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 200px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.questionmark {
+	display: flex;
+	justify-content: center;
+	align-items: center !important;
+	text-align: left !important;
+	margin: 0;
+	padding: 0;
+}
