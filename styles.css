@@ -146,7 +146,7 @@ body {
 
 .skills .li_wrap {
 	text-decoration: none !important;
-	background: #fff;
+	background: #f9f9f9;
 }
 
 .skills .li_wrap .text,
@@ -180,7 +180,7 @@ body {
 
 .skills .li_wrap:hover .icon,
 .skills .li_wrap:hover .text {
-	color: #f9f9f9 !important;
+	color: #b9afa7 !important;
 }
 
 /* LINK & LINK HOVER */
@@ -191,7 +191,7 @@ a {
 
 a:hover {
 	text-decoration: none !important;
-	color: #fff;
+	color: #f9f9f9;
 }
 
 /* end link & text hover: skills */
