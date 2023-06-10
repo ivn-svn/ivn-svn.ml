@@ -1,4 +1,10 @@
 @media only screen and (max-width: 740px) {
+	.contact div { font-size: 0.8em !important;}
+	.langItem div, .langSlider div {
+	font-size: 1.3em;
+}
+
+	 .gradient, .resume, .right {margin: 0; padding: 0; width: 100%; font-size: 1.3em;}
 	h1 { font-size: 4.5em; }
 	h3 { font-size: 2.2em; }
 	h2 { display: block; text-align: center; }
@@ -8,6 +14,12 @@
 }
 
 @media only screen and (max-width: 570px) {
+	.contact div { font-size: 0.8em !important; 
+}
+.langItem div, .langSlider div {
+	font-size: 1.3em;
+}
+.langSlider
 	ul li {
 		display: inline-block; 
 		padding-left: 15px; 
@@ -27,6 +39,12 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.contact div { font-size: 0.8em !important;}
+	.langItem div, .langSlider div {
+	font-size: 1.3em;
+}
+
+    .gradient, .resume, .right {margin: 0; padding: 0; width: 100%; font-size: 1.3em;}
 	ul li { width: 350px; }
 	.title {
 		font-size: 8px !important;
@@ -38,15 +56,31 @@
 }
 
 @media only screen and (max-width: 320px) {
-	* { margin: 0 10px; }
+	.contact div { font-size: 0.8em !important;}
+	.langItem div, .langSlider div {
+	font-size: 1.3em;
+}
+
+ .gradient, .resume, .right {margin: 0; padding: 0; width: 100%;}
+	* { margin: 0 10px;
+		font-size: 1.3em;	 }
 		ul li { width: 300px; }
 
 }
 
 /** iPhone only **/
 @media screen and (max-device-width: 480px) {
-	ul li { width: 350px; }
-	p { font-size: 0.8em; }
+	.contact div { font-size: 0.8em !important;}
+	.langItem div, .langSlider div {
+	font-size: 1.3em !important;
+	width: 120%;
+}
+
+	.gradient, .resume, .right {margin: 0; padding: 0; width: 100%;}
+	ul li { width: 100%; }
+	p { font-size: 0.9em; }
+	.about, .switch-title div, .experience-title, .education-title { font-size: 1.3em !important; padding: 0; margin: 0;}
+	.date { font-size: 28px; }
 	.title {
 		font-size: 9px !important;
 	}
