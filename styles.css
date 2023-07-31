@@ -16,6 +16,57 @@ body {
 	background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
 }
 
+#profile-pic-container {
+    margin: 45px;
+    position: relative; /* Set position to relative for mouse tracking */
+    overflow: hidden; /* Hide any overflow to make zoom effect visible */
+}
+
+.img_holder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth zoom effect */
+    transform-origin: center center; /* Set the zooming point to the center of the image */
+}
+
+.img_holder::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 10px solid white;
+    border-radius: 50%;
+    z-index: -1;
+    box-sizing: content-box;
+    padding: 5px;
+}
+
+#avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth zoom effect */
+}
+
+.zoomed {
+    transform: scale(4.9); /* Adjust the scale factor to control the zoom level */
+}
+
+
 .resume {
 	width: 800px;
 	background: #fff;
@@ -400,8 +451,8 @@ button.print-button:hover .print-icon::after {
 	padding: 2px;
 	position: relative;
 	z-index: 1;
-	background-color: #4158D0;
-	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%);
+	background-color: #ddb595;
+	background-image: linear-gradient(43deg, #9095af 0%, #ffab4a 46%, #ddb595 100%);
 	margin-right: 25px;
 	filter: brightness(120%);
 	overflow: hidden; /* Ensures the animation stays within the container */
@@ -417,7 +468,7 @@ button.print-button:hover .print-icon::after {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ddb595 100%);
+	background-image: linear-gradient(43deg, #9ba3c9 0%, #858585 46%, #ddb595 100%);
 	filter: blur(20px);
 	animation: flowing-edges 4s infinite linear;
 	transform: translateX(-100%);
