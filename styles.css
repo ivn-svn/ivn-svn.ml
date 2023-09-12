@@ -55,12 +55,7 @@ body {
     padding: 5px;
 }
 
-#avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth zoom effect */
-}
+
 
 .zoomed {
     transform: scale(4.9); /* Adjust the scale factor to control the zoom level */
@@ -600,6 +595,15 @@ button.print-button:hover .print-icon::after {
 	padding: 0;
 }
 
+#avatar {
+    width: 200px; /* Make the width responsive */
+    max-width: 200px; /* Set a max-width to prevent the image from becoming too large */
+    height: auto; /* Let the height adjust proportionally */
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 25px;
+}
+
 
 /* Default style for the qr-div */
 .qr-div {
@@ -620,3 +624,4 @@ button.print-button:hover .print-icon::after {
 		visibility: hidden;
 	}
 }
+

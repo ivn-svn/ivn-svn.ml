@@ -85,9 +85,7 @@
 		font-size: 9px !important;
 	}
 
-	.left {
-		width: 28% !important;
-	}
+
 }
 /* Other effects: */
 .img_holder {
@@ -107,3 +105,36 @@
  .icon:hover {
 	opacity: 30%;
   }
+
+/* Media Queries for different screen widths */
+@media (max-width: 320px) { /* Smallest smartphones */
+    #avatar {
+        max-width: 50px !important; /* Adjust the max-width for smaller screens */
+    }
+
+    .img_holder {
+        width: 70px !important; /* Adjust the width for smaller screens */
+    }
+}
+
+@media (min-width: 180px) and (max-width: 450px) { /* Typical smartphone widths */
+    #avatar {
+        max-width: 80px !important; /* Default size for most smartphones */
+    }
+
+    .img_holder {
+        width: 75px !important; /* Default width for most smartphones */
+    }
+}
+
+@media (min-width: 415px) and (max-width: 768px) { /* Larger smartphones and smaller tablets */
+    #avatar {
+        max-width: 75px !important; /* Adjust the max-width for larger smartphones */
+    }
+
+    .img_holder {
+        width: 65px !important; /* Default width for larger smartphones */
+    }
+}
+
+/* Add more media queries and adjust values as needed */

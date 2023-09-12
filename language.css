@@ -31,14 +31,6 @@
   .languages {
     padding-bottom: 25px;
   }
-
-  #avatar {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: bottom;
-    margin-bottom: 25px;
-  }
   
   .copy-icon {
     display: inline-block;
