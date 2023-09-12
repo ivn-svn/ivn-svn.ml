@@ -599,3 +599,24 @@ button.print-button:hover .print-icon::after {
 	margin: 0;
 	padding: 0;
 }
+
+
+/* Default style for the qr-div */
+.qr-div {
+    display: none; /* Initially hide the div */
+}
+
+/* Media query for print styles */
+@media print {
+    .qr-div {
+        display: block; /* Display the div when printing */
+    }
+
+	#qr {
+		width: 250px;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: hidden;
+	}
+}
