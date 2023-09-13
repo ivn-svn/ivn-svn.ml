@@ -8,3 +8,12 @@
         visibility: visible !important;
     }
   }
+
+  #avatar {
+    max-width: 200px !important; /* Adjust the max-width for larger smartphones */
+}
+
+.img_holder {
+    width: 150px !important; /* Default width for larger smartphones */
+    height: 150px !important; /* Default width for larger smartphones */
+}
