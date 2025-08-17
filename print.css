@@ -2,18 +2,28 @@
     .left, .text, .contact {
       color: black !important;
     }
-
+      body {
+    zoom: 0.9;
+    }
     #education-panel, #experience-panel, .education_wrap, .education {
         display: block !important;
         visibility: visible !important;
     }
-  }
-
-  #avatar {
+      #avatar {
     max-width: 200px !important; /* Adjust the max-width for larger smartphones */
-}
+      }
+  .img_holder {
+      width: 150px !important; /* Default width for larger smartphones */
+      height: 150px !important; /* Default width for larger smartphones */
+  }
+    .langItem {
+      flex: 1;
+      padding: 10px;
+      font-size: 10px;
+      text-align: center;
+      color: #393535 !important;
+      font-weight: bold;
+      text-shadow: 0 1px 4px #222;
+     }
+    }
 
-.img_holder {
-    width: 150px !important; /* Default width for larger smartphones */
-    height: 150px !important; /* Default width for larger smartphones */
-}

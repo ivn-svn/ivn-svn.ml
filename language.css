@@ -13,10 +13,13 @@
     padding: 10px;
     text-align: center;
     transition: background-color 0.3s;
+    color: #fff !important;
+    font-weight: bold;
+    text-shadow: 0 1px 4px #222;
   }
   
   .langItem.active {
-    background-color: #ccc;
+    background-color: #6a6363;
     color: dimgray;
   }
   
